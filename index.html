@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <style>
+        .box1 {
+            align-items: center;
+
+        }
+    </style>
+    <div class="box1">
+        <h1>IRIS-CLASSIFICATION</h1><br><br>
+        <form action="/classify" method="post">
+            sepal length: <input type="text" name="sl" id=""><br>
+            sepal width: <input type="text" name="sw" id=""><br>
+            petal length: <input type="text" name="pl" id=""><br>
+            petal width: <input type="text" name="pw" id=""><br>
+            class:{{result}}
+            <br>
+            <input type="submit" value="predict">
+
+        </form>
+    </div>
+</body>
+
+</html>
